@@ -6,7 +6,8 @@ const router = express.Router();
 const index = require('./routes/index');
 const rota = require('./routes/route');
 app.use('/', index);
-app.use('/automoveis', rota);
+app.use('/veiculos', rota);
+app.use('/pessoa', rota);
 app.get('/', (req, res) => res.send('Controle de automoveis'));
 
 app.listen(port, () => console.log(`Escutando a porta ${port}!`));
