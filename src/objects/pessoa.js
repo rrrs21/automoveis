@@ -21,5 +21,5 @@ app.post('/pessoas', (req, res) => {
 	res.send('Motorista adicionado com sucesso');
 });
 
-app.listen(port, () => console.log(`Hello world app listening on port ${port}!`))
+app.listen(port, () => console.log(`Escutando a porta ${port}!`))
 
